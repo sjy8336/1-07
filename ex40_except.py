@@ -11,8 +11,11 @@ try:
     num = int(input('정수를 입력하세요>>'))
     result = 10/num
     print(f'10 / {num} = {result}')
+    # m = int('100abc')
 except ZeroDivisionError as ex:
     # 에러 처리 코드를 여기에
     print('입력 오류: 0으로 나누면 안돼요!!', ex)
+except Exception as ex:
+    print('기타 예상치 못한 에러 발생')
 print('##반드시 실행되어야 하는 코드#########')
 print('***프로그램 끝***************')
